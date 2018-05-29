@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
         Model::unguard(); //解除框架中的防注入保护
 
         $this->call(UsersTableSeeder::class);
+        $this->call(StatusesTableSeeder::class);
 
         Model::reguard(); //操作完成，恢复防注入保护
     }
